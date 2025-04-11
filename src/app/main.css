@@ -6,20 +6,21 @@
   }
 
 body{
-	font-family: 'PT_Sans-Web-Regular';
+	box-sizing: border-box;
 }
-
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	font-family: 'PT_Sans-Web-Regular' !important;
+	color: #252422;
 }
 
 :root{
-	--accent-blue: #1b6afd;
-	--white: #ffffff;
-	--black: #323232;
-	--grey: #dedede;
-	--not-active: #b3b3b3;
+	--accent-yellow: #f1cd01;
+	--yellow: #ffde23;
+	--white: #e9eaed;
+	--gray: #aaaaaa;
+	--dark-gray: #8e8e92;
+	--black: #252422;
 
 }
