@@ -38,7 +38,7 @@
 		</div>
 		<SubmitButton
 			btn-text="Отправить"
-			:disable="true"
+			:disable="isDisabled"
 		/>
 	</form>
 </template>
@@ -48,9 +48,9 @@ import DividerLine from '@/features/submit-form/ui/DividerLine.vue';
 import DropDown from '@/features/submit-form/ui/DropDown.vue';
 import { reactive, ref, watch } from 'vue';
 import { collectionsApi } from '@/entities/collections';
-
+import { useValidate } from '@/features/submit-form/model';
 import { useRouter } from 'vue-router';
-
+import { UseApplicationStore } from '@/app/stores/application/applicationStore';
 const router = useRouter();
 
 const { 
@@ -65,9 +65,15 @@ const {
 const formData = reactive({});
 Object.keys(getAllCollections()).forEach((e) => formData[e] = null);
 
+const isDisabled = ref(true);
+watch(formData, () => {
+	const { isValid } = useValidate(formData);
+	if(isValid) isDisabled.value = false;
+})
 
-
+const store = UseApplicationStore();
 function SubmitForm(){
+	store.saveFormData(formData);
 	router.push({ name: 'resultRoute'});
 }
 
