@@ -1,4 +1,5 @@
- {
+{
+  "collections":{
     "cities": [
         {
             "id": 1,
@@ -166,4 +167,13 @@
             "name": "Ночная"    
         }
     ]
+},
+
+"types": {
+   "cities": "Город",
+   "workshops": "Цех",
+   "employees": "Сотрудник",
+   "brigades": "Бригада",
+   "shifts": "Смена"
+}
 }

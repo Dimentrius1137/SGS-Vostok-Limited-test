@@ -73,7 +73,7 @@ watch(formData, () => {
 
 const store = UseApplicationStore();
 function SubmitForm(){
-	store.saveFormData(formData);
+	store.saveApplication(formData);
 	router.push({ name: 'resultRoute'});
 }
 

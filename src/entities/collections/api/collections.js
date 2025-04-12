@@ -1,5 +1,5 @@
-import collections from './entities.json';
-
+import entities from './entities.json';
+const { collections, types } = entities;
 export class collectionsApi {
     getAllCollections(){
         return collections
@@ -18,6 +18,9 @@ export class collectionsApi {
     }
     getShifts(){
         return collections.shifts;
+    }
+    getTypes(){
+        return types;
     }
 }
 

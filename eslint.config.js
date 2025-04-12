@@ -28,6 +28,7 @@ export default defineConfig([
       'vue/html-indent': ["warn", "tab"],
       'vue/attribute-hyphenation': 'off',
       'vue/require-prop-types': 'off', 
+      'vue/no-parsing-error': 'off'
     },
   },
 ])
