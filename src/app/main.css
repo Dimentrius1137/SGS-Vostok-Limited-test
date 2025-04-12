@@ -1,0 +1,26 @@
+
+
+@font-face {
+	font-family: 'PT_Sans-Web-Regular';
+	src: url('@/shared/assets/fonts/PT_Sans-Web-Regular.ttf')
+  }
+
+body{
+	box-sizing: border-box;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT_Sans-Web-Regular' !important;
+	color: #252422;
+}
+
+:root{
+	--accent-yellow: #f1cd01;
+	--yellow: #ffde23;
+	--white: #e9eaed;
+	--gray: #aaaaaa;
+	--dark-gray: #8e8e92;
+	--black: #252422;
+
+}

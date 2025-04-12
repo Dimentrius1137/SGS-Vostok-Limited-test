@@ -26,7 +26,9 @@ export default defineConfig([
       'no-unused-vars': 'warn',
       'vue/html-self-closing': 'off',
       'vue/html-indent': ["warn", "tab"],
-      'vue/attribute-hyphenation': 'off'
+      'vue/attribute-hyphenation': 'off',
+      'vue/require-prop-types': 'off', 
+      'vue/no-parsing-error': 'off'
     },
   },
 ])
